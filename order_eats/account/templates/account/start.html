@@ -1,0 +1,51 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title></title>
+	<style type="text/css">
+		.container{
+			 position: relative;
+             text-align: center;
+             color: white;
+             max-height: 50%;
+
+             
+		}
+		.container1{
+			position: relative;
+			height: 50%;
+		}
+
+		.centered{
+			 position: absolute;
+             top: 60%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+		}
+		.centered1{
+			position: absolute;
+			top: 30%;
+			left: 25%;
+		}
+
+		.centered2{
+			position: absolute;
+			top:40%;
+			left: 45%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container ">
+		<img class="w3-opacity"  src="{% static 're2.jpg' %}"  style="width:100%; height: 50%" >
+		<h1 class="centered1 " style="font-family: verdana; text-align: center">TASTE. TOUCH. HEAR. EXPERIENCE</h1>
+		<img src="{% static 'order-eat.jpg' %}" style="width: 200px;" class="centered2">
+		
+		
+	</div>
+
+</body>
+</html>

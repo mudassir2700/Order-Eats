@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>What's Up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="container">
+        <br>
+        {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+                <li>{{appointment.order_id}}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <br>
+        <br>
+        <div class="container">
+            <h2>RESERVATION</h2>
+            {% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li style="color:red">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            <form action="{% url 'reservations:addi' slug=ob %}" class="col s12" method="POST" id="tableform">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="date" type="date" class="validate" name="date" required="True">
+                        Date
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="time" type="time" class="validate" name="time">
+                        Time
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" name="email">
+                        E-mail
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="input-field col s12">
+                        <input id="number" type="text" class="validate" name="number">
+                        Contact Number
+                    </div>
+                </div>
+                
+               
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="task" type="text" class="validate" name="task">
+                        <label for="task">name</label>
+                    </div>
+                </div>
+              
+              
+             
+                <input type="submit" name="add" value="Add">
+            </form>
+           
+        </div>
+    </div>
+    <select form="tableform">
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+    </select>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title></title>
+
+	<style type="text/css">
+	    body{
+	    	margin: 0;
+	    	height: 100%;
+	    }
+		.bg-image{
+			background-image: url('12.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg-image">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Order-Eat</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'account:homepage' %}">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'account:login' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'account:signup' %}">Register</a>
+      </li>
+      
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'account:filter' %}">
+      <input class="form-control mr-sm-2" type="search"  name="q" placeholder="Search" value="{{request.GET.q}}">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+
+<div class="bg-image"></div>
+
+<div>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ips
+	</p>
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>
+<section>
+	<h4 style="margin-left: 10px;">uiuiuw</h4>
+</section>
+
+<div>
+		<table>
+			<th>List of cuisines</th>
+			{% for j in obj %}
+			<tr>
+				<td><a href="{% url 'account:cui' cuisine_type=j.cuisine_type %}">
+				{% ifchanged j.cuisine_type %}
+			    {{j.cuisine_type}}
+			    {% endifchanged %}</a></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</div>
+
+</body>
+</html>

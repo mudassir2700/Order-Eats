@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<title></title>
+</head>
+<body style="margin-left: 75px; margin-right: 75px; ">
+	<a href="{% url 'account:homepage' %}">back</a>
+	<div class="contaner">
+		 <h4>Here is your Appointment :</h4>
+		 <hr>
+		<table>
+			<th>URF-No</th>
+			<th>Customer Name</th>
+			<th>Date of appointment</th>
+			<th>Time of appointment</th>
+			<th>No of persons</th>
+			<th>Meal choice</th>
+			<th>Restaurant</th>
+			<th>Location</th>
+			
+			<tr>
+				<td>{{obj.order_id}}</td>
+				<td>{{obj.name}}</td>
+				<td>{{obj.date}}</td>
+				<td>{{obj.slot}}</td>
+				<td>{{obj.tablesize}}</td>
+				<td>{{obj.mealchoice}}</td>
+				<td>{{obj.tablename_restaur}}</td>
+				<td>{{rest.Area}}</td>
+
+		    </tr>
+		    
+		</table>
+		<a href="{% url 'reservations:cust_edit_reserve' oid=oid %}">Edit</a>
+		<div>
+		 {% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li style="color:red">{{ message }}</li>
+                {% endfor %}
+                </ul>
+           {% endif %}
+       </div>
+
+
+	</div>
+
+	<br>
+	<br>
+	<div>
+		{% if crt %}
+		<h3> Your Order:</h3>
+		<hr style="margin-right:60%;">
+	<table>
+		
+		{% for i in crt %}
+		<tr>
+			<td>{{i.item_name}}</td>
+			<td>{{i.quantity}}</td>
+			<td>{{i.price}}</td>
+		</tr>
+		{% endfor %}
+		{% endif %}
+	</table>
+	{% if check %}
+	<h4>Total Price:{{check.cart_price}}</h4>
+	<h4>Total Tax:{{check.tax}}</h4>
+	<br>
+	<hr style="margin-right: 75%;">
+    <span>
+    	<h5 style="padding-right: 20px;">Total Payment:{{check.total}}</h5>
+    	<h5 style="padding-right: 15px;">Amount Paid:{{check.amount_paid}}</h5>
+    	<h5>Amount Due:{{check.amount_due}}</h5>
+    </span>
+    {% endif %}
+	</div>
+	<br>
+	
+
+	<div class="container">
+        <h2>Chat</h2>
+        <hr>
+        <div class="container">
+            <div class="container">
+                <form method="POST" action="{% url 'reservations:chatordid' chatordid=obj.order_id  %}">
+                    {% csrf_token %}
+                <div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" name="name" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Message:</label>
+  <input type="text" name='review' class="form-control" id="pwd">
+</div>
+ <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Add</i></button>
+ </form>
+
+
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

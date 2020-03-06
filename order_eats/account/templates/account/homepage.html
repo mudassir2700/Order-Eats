@@ -1,0 +1,193 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="{% static 'logo1.png' %}">
+	<title>Order-Eats</title>
+	<style type="text/css">
+
+	.myslides{
+		display:none;
+	}
+
+	
+	.slideshow-container {
+		width: 100%;
+		position: relative;
+		margin: auto;
+		max-height: 800px;
+	}
+
+	.text {
+		color: #f2f2f2;
+	    font-size: 15px;
+	    padding: 8px 12px;
+	    position: absolute;
+	    bottom: 8px;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.numbertext {
+		float: left;
+	    color: #f2f2f2;
+	    font-size: 12px;
+	    padding: 8px 12px;
+	    position: absolute;
+	    top: 0;
+	}
+
+	.dot {
+		height: 15px;
+	    width: 15px;
+	    margin: 0 2px;
+	  
+	    border-radius: 50%;
+	    display: inline-block;
+	    transition: background-color 0.6s ease;
+	}
+
+
+	</style>
+</head>
+<body >
+	<h1>Homepage view</h1>
+	<div class="w3-top  w3-container " style="background-color: black;background-image: url();"  >
+		<div class="w3-bar  w3-mobile w3-panel w3-opacity-min " style="height: 50px;">
+			<a href="{% url 'account:homepage' %}"><img src="{% static 'order-eat.jpg'%}" class="w3-mobile w3-left" style="height: 65px"></a>
+
+			<form  method="GET" action="{% url 'account:filter' %}">
+				<input type="text" name="q" placeholder="Search" value="{{request.GET.q}}">
+				<input type="submit" value="Search">
+				
+			</form>
+			
+			<a href="{% url 'account:signup' %}" class="w3-bar-item w3-button w3-hover-text-lack  w3-hover-yellow w3-hover-border-black w3-hover-border-black   w3-mobile w3-right  "   style="color: white;font-size: 15px;">Register</a>
+            <a href="{% url 'account:login'%}" class="w3-bar-item w3-button  w3-border w3-border-black w3-hover-yellow w3-hover-border-black     w3-mobile w3-right" style="color: white;font-size: 15px;">LogIn</a>
+            <a href="#" class="w3-bar-item w3-button  w3-border w3-border-black w3-hover-yellow w3-hover-border-black    w3-mobile w3-right" style="color: white;font-size: 15px;" >Our Story</a>
+            
+		</div>
+	</div>
+
+	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="{% static 'rest.jpg' %}" style="width: 100%"
+				style="float:right">
+			<div class="text" style="color:red;"></div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="{% static '1.jpg' %}" style="width: 100%" style="float:right">
+			<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="{% static '20.jpg' %}" style="width: 100%" style="float:left">
+			<div class="text"></div>
+		</div>
+		<br clear="all">
+
+	</div>
+
+	<div style="text-align: center">
+		<span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 5000); // Change image every 2 seconds
+		}
+	</script>
+	
+	
+	<div>
+		<table>
+			<th>List of restaurants</th>
+			<th>Cuisine</th>
+			
+			{% for i in obj %}
+			<tr>
+				{% if i.status %}
+
+				<td><a href="{% url 'account:reserve' slug=i.slug %}">{{i.Restaurant_name}}</a></td>
+				<td>{{i.Cuisines_You_Offer}}</td>
+				
+
+				{% endif %}
+
+			</tr>
+
+			{% endfor %}
+		</table>
+	</div>	
+	</br>
+	<div>
+		<table>
+			<th>List of cuisines</th>
+			{% for j in obj %}
+			<tr>
+				<td><a href="{% url 'account:cui' cuisine_type=j.cuisine_type %}">
+				{% ifchanged j.cuisine_type %}
+			    {{j.cuisine_type}}
+			    {% endifchanged %}</a></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</div>
+	<div>
+		<span>
+			<a href="{% url 'account:fine_dining' %}"><img src="{% static 'cas.png' %}" style="width: 100px; height: 100px;padding: 5px;margin: 30px;"></a>
+			<a href="{% url 'account:casual_dining' %}" ><img src="{% static 'cas1.png' %}" class=" w3-hover-opacity" style="width: 100px; height: 100px;padding: 5px;margin: 10px;"></a>
+			<a href="{% url 'account:bar' %}"><img src="{% static 'fine.jpg' %}" style="width: 100px; height: 100px;padding: 20px;border: 5px;"></a>
+			<a href="{% url 'account:cafe' %}"><img src="{% static 'cafe1.jpg' %}" style="width: 75px; height: 100px;border: 1px solid #4CAF50; margin: 30px;padding: 5px;"></a>
+			<a href="{% url 'account:food_court' %}"><img src="{% static 'court.jpg' %}" style="width: 100px; height: 100px;margin: 30px;"></a>
+			<a href="{% url 'account:bakeries' %}"><img src="{% static 'bak.jpg' %}" style="width: 100px; height: 100px;"></a>
+		</span>
+	</div>
+
+	<div>
+		<h2>Customer table reservation status </h2>
+		<form action="{% url 'reservations:cust_table_reserve_check' %}" method="POST">
+			{% csrf_token %}
+			<input type="text" name="query" placeholder="Enter Reference Number">
+			<button type="submit">submit</button>
+		</form>
+	</div>
+	<div>
+		{% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li style="color:red">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+	</div>
+
+	
+</body>
+</html>

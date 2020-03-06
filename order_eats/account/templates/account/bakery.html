@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% for i in qry %}
+	<li>
+			<h2><a href="{% url 'account:reserve' slug=i.slug %}">{{i.Restaurant_name}}</a></h2>
+			
+		</li>
+	{% endfor %}
+
+</body>
+</html>

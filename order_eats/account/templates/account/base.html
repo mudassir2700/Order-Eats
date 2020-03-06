@@ -1,0 +1,20 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order-Eats</title>
+	<link rel="icon" href="{% static 'logo1.png' %}">
+</head>
+<body>
+	<h1>Hoempage view</h1>
+    <h2><a href="{% url 'account:signup'%}">Sign-Up</a></h2>
+    
+    <h2><a href="{% url 'account:homepage'%}">home</a></h2>
+    
+
+	{% block content %}
+
+	{% endblock %}
+
+</body>
+</html>

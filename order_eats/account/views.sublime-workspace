@@ -1,0 +1,813 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"word",
+				"word-spacing\tproperty"
+			],
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"width",
+				"max-width\tproperty"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"margi",
+				"margin\tproperty"
+			],
+			[
+				"sa",
+				"scale3d()\ttransform"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"rg",
+				"rgba()\tbackground-color"
+			],
+			[
+				"colr",
+				"color\tproperty"
+			],
+			[
+				"he",
+				"height\tproperty"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"over",
+				"overflow\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"bord",
+				"border-width\tproperty"
+			],
+			[
+				"bor",
+				"border-style\tproperty"
+			],
+			[
+				"wo",
+				"word-spacing\tproperty"
+			],
+			[
+				"p",
+				"pre\twhite-space"
+			],
+			[
+				"s",
+				"sans-serif\tfont-family"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"backg",
+				"background-position\tproperty"
+			],
+			[
+				"background",
+				"background-position\tproperty"
+			],
+			[
+				"backgroun",
+				"background-image\tproperty"
+			],
+			[
+				"backgrou",
+				"background-position\tproperty"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"menu",
+				"menuslug"
+			],
+			[
+				"res",
+				"restaurant_details"
+			],
+			[
+				"rse",
+				"rest_details"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"rev",
+				"revordid"
+			],
+			[
+				"me",
+				"messages"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"tab",
+				"table-sm"
+			],
+			[
+				"ta",
+				"table-responsive"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"bacl",
+				"background-color\tproperty"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"ali",
+				"text-align\tproperty"
+			],
+			[
+				"cui",
+				"cuisine_type"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"card",
+				"card-text"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"ba",
+				"background-size\tproperty"
+			],
+			[
+				"backgr",
+				"background-image\tproperty"
+			],
+			[
+				"te",
+				"text-transform\tproperty"
+			],
+			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"tra",
+				"transition\tproperty"
+			],
+			[
+				"tr",
+				"transition\tproperty"
+			],
+			[
+				"tabl",
+				"tablename_slug"
+			],
+			[
+				"slu",
+				"slug"
+			],
+			[
+				"oid",
+				"oid"
+			],
+			[
+				"cust",
+				"customer_tablereserve_check"
+			],
+			[
+				"de",
+				"delete"
+			],
+			[
+				"ite",
+				"item_id"
+			],
+			[
+				"amoun",
+				"amount_paid"
+			],
+			[
+				"amo",
+				"amount_to_be_paid"
+			],
+			[
+				"che",
+				"checkout"
+			],
+			[
+				"ord",
+				"ord_id"
+			],
+			[
+				"De",
+				"DecimalField"
+			],
+			[
+				"ch",
+				"CharField"
+			],
+			[
+				"non",
+				"nonveg_chinese"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"B",
+				"BooleanField"
+			],
+			[
+				"ve",
+				"vegetarian_meal"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"my",
+				"myFunction"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"magin-",
+				"margin-left\tproperty"
+			],
+			[
+				"Res",
+				"Resevation"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"order",
+				"order_id"
+			],
+			[
+				"pre_",
+				"pre_save_slug"
+			],
+			[
+				"rest",
+				"rest_menu_slug"
+			],
+			[
+				"rest_menu",
+				"rest_menu_slug"
+			],
+			[
+				"se",
+				"sender"
+			],
+			[
+				"ma",
+				"maincourse"
+			],
+			[
+				"M",
+				"maincourse"
+			],
+			[
+				"veg",
+				"veg_maincourse"
+			],
+			[
+				"Ty",
+				"Type_of_dining__icontains"
+			],
+			[
+				"sta",
+				"static"
+			],
+			[
+				"transf",
+				"transform\tproperty"
+			],
+			[
+				"min",
+				"min-height\tproperty"
+			],
+			[
+				"hei",
+				"height\tproperty"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"f",
+				"filter"
+			],
+			[
+				"slug",
+				"slugify"
+			],
+			[
+				"crea",
+				"create_slug"
+			],
+			[
+				"cuis",
+				"cuisine_view"
+			],
+			[
+				"MEXICAN",
+				"MEXICAN"
+			],
+			[
+				"Cui",
+				"Cuisines_You_Offer"
+			],
+			[
+				"T",
+				"True"
+			],
+			[
+				"restaur",
+				"restaur_name"
+			],
+			[
+				"dineout",
+				"dineout"
+			],
+			[
+				"sett",
+				"setting"
+			],
+			[
+				"form",
+				"form"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"rseta",
+				"restaur_slug"
+			],
+			[
+				"to",
+				"today"
+			],
+			[
+				"cl",
+				"cleaned_data"
+			],
+			[
+				"table",
+				"tablesize"
+			],
+			[
+				"appoint",
+				"appointments"
+			],
+			[
+				"set",
+				"setting"
+			],
+			[
+				"Fie",
+				"FileField"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"app",
+				"appoint"
+			],
+			[
+				"is",
+				"is_valid"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"resta",
+				"restaurant_details"
+			],
+			[
+				"appoi",
+				"Appointment"
+			],
+			[
+				"restauarnt",
+				"Restaurant"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"post",
+				"postData"
+			],
+			[
+				"last",
+				"last_app"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"st",
+				"style\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/ho.html",
+		"/C/Users/Mudassir ali/Desktop/brian_greene.html",
+		"/C/Users/Mudassir ali/Desktop/brian",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/restdetail.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/res.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/login.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/homepage.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/cuisine.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/create.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/base.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/views.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/tokens.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/urls.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/db.sqlite3",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/resthomepage.html",
+		"/C/Users/Mudassir ali/newproject/test1.py",
+		"/C/Users/Mudassir ali/newproject/test.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/success.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/ad.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/cust_edit_reserve.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/order.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/checkout.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/urls.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/order_eats/settings.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/order_eats/urls.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/home1.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/images/styles.css",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/forms.py",
+		"/C/Users/Mudassir ali/Desktop/example.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/add1.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/casual.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/urls.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/models.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/admin.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/restview.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/table_reserve.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/no_of_rest_update.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/rest_update.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/reservation_settings.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/reserve.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/menuupdate.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/menuview.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/menuupdation.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/menuadd.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/views.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/page.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/home.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/images/style.css",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/images/cafe.jpg",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/customer_tablereserve_check.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/forms.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/models.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/admin.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/signup.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/reserve1.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/reserve.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/sign.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/start.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/views.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/filter.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/bar.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/fine.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/bakery.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/food_court.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/cafe.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/menu/admin.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/menu/models.py",
+		"/C/Users/Mudassir ali/Desktop/dashboard/index.html",
+		"/C/Users/Mudassir ali/Desktop/style.css",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/migrations/forms.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/customer_tablereserve_check.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/templates/rest_details/rest_update",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest_eats/settings.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/templates/reservations/add.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/views.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/account_activation_email.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest/templates/rest/home.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/__init__.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/forms.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/db.sqlite3",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/order_eats/templates/base.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/forms.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/base.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/account_activation_sent.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/login.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/account_activation_invalid.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest_eats/urls.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/urls.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/admin.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/account_activation_sent.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/account_activation_email.html",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/account/templates/account/account_activation_invalid.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/tokens.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/models.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest/admin.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest/models.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/migrations/0008_auto_20181029_2122.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/reservations/utils.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/migrations/0013_remove_restaurant_details_contact.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/migrations/0011_remove_restaurant_details_contact.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/migrations/0010_auto_20181029_2344.py",
+		"/C/Users/Mudassir ali/project-django/order-eats-django/order-eat/order_eats/rest_details/migrations/0009_auto_20181029_2343.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/home.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/signup.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest/urls.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest/forms.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest_eats/templates/base.html",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/rest/views.py",
+		"/C/Users/Mudassir ali/project-django/try-django/proj/rest_eats/restaur/templates/restaur/profile.html",
+		"/C/Users/Mudassir ali/project/pract/project/test_practice/urls.py",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrecommendations/urls.py",
+		"/C/Users/Mudassir ali/project/pract/project/myrestaurants/views.py",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/views.py",
+		"/C/Users/Mudassir ali/project/pract/project/hotels/admin.py",
+		"/C/Users/Mudassir ali/project/pract/project/hotels/models.py",
+		"/C/Users/Mudassir ali/project/pract/project/test_practice/settings.py",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/templates/myrestaurants/restaurant_detail.html",
+		"/C/Users/Mudassir ali/project/pract/project/myrestaurants/templates/myrestaurants/restaurant_detail.html",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/urls.py",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/forms.py",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/templates/myrestaurants/restaurant_list.html",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/templates/myrestaurants/form.html",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/templates/myrestaurants/base.html",
+		"/C/Users/Mudassir ali/project/pract/project/myrestaurants/templates/myrestaurants/base.html",
+		"/C/Users/Mudassir ali/project/pract/project/hotels/views.py",
+		"/C/Users/Mudassir ali/project/pract/project/myrestaurants/urls.py",
+		"/C/Users/Mudassir ali/project/pract/project/myrestaurants/templates/myrestaurants/form.html",
+		"/C/Users/Mudassir ali/project/myrest/restr/myrecommendations/myrestaurants/models.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.3333333333
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "views.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"proj\\rest_eats\\restaur\\models.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 360.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

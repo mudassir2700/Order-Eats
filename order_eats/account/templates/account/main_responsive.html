@@ -1,0 +1,1353 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+
+	margin: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	display: block;
+
+	font-size: 20px;
+}
+
+
+
+.can{
+	background-image: url('{% static 'mainpic.png' %}');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height:600px;
+	position: relative;
+}
+
+
+.ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #333;
+  opacity: 0.9;
+  /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+
+.li a,.li1 a,.li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
+
+ 
+  text-decoration: none;
+}
+
+.li a:hover,.li1 a:hover,.li2 a:hover {
+  
+  transform: scale(1.2); 
+}
+
+.ul_hr{
+	display: none;
+	 border: 1px solid #f1f1f1;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+
+.li {
+  float: left;
+   padding: 23px 10px;
+   font-size: 16.5px;margin-left: 10px;
+   background-color: #333;
+}
+
+.dropdown{
+	float: left;
+	margin-left: 10px;
+	display: inline-block;
+	z-index: 1;
+	height:auto; 
+	
+}
+
+.dropdown .dropdown_button{
+	font-size: 16.5px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 23px 10px;
+	background-color: inherit;
+	font-family: inherit;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a{
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+
+  display: block;
+}
+
+.show{
+	display: block;
+}
+
+.li1{
+	float: left;
+   padding: 23px 10px;
+
+	opacity: 0.5; font-size: 16.5px;margin-left: 300px;
+	background-color: #333;
+
+}
+
+.name_navbar{
+   float:left;margin-left: 110px; font-family: sans-serif;color:white;box-sizing: border-box;padding: 2px;margin-top: 15px;border-style: solid;border-width: 1px;font-size: 24px;
+   background-color: #333;
+
+}
+
+.li2{
+	margin-right: 10px;
+	float: left;
+   padding: 23px 10px;
+   font-size: 16.5px;margin-left: 10px;
+   background-color: #333;
+}
+
+#upBtn{
+
+	height: 25px;width: 25px;display:none;
+	cursor: pointer;
+}
+
+#downBtn{
+
+	height: 25px;width: 25px;display:none;
+	cursor: pointer;
+}
+
+
+
+/*
+.ul a.icon{
+	display: none;
+}
+*/
+
+
+
+.can_h2{
+
+	position: absolute; top:180px;left:31%;right: 100px;color:white;font-size: 50px;font-family:sans-serif;font-weight: 500;
+
+
+}
+
+.can_p{
+
+	position: absolute; top:264px;left: 13%;right: 70px;color: white;
+  font-size:28px; font-family: Arial, Helvetica, sans-serif;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+#myBtn:hover {
+
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+#about{
+	width: 40%; float:left; height:auto; margin-top:22px;margin-left: 110px;margin-right: 80px;
+}
+
+#about_h2{
+
+	font-family: Arial, Helvetica, sans-serif;color: #666666;font-size: 40px;margin-right: 50px;letter-spacing: 0.6px;
+
+}
+
+#about_h4{
+	font-style:normal;font-weight:normal;font-family:sans-serif;letter-spacing: 0.6px;font-size: 30px;
+}
+
+
+.pic{
+	margin-top: 30px;
+	height: 500px;
+	width: 500px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-left: 80px;
+	width: 34%;
+  
+}
+
+.pic img{
+	max-width: 100%;
+}
+
+
+
+#para{
+	margin-top: 20px;margin-left: 110px;margin-right: 100px;
+}
+
+#para_h5{
+
+	font-size: 17px;font-family:'Abel';font-weight:500;letter-spacing: 0.5px;line-height: 22px;word-spacing: normal;
+}
+
+.can1{
+	background-size: cover;
+	background-color: rgba(0,0,0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	min-height:1650px; 
+	overflow-x: hidden;
+}
+
+#can1_albert{
+	color: white;position: absolute;left:8%;
+}
+
+#can1_albert img{
+	width:auto;height: auto;
+}
+#can1_dream{
+	color: white;top: 100px;position: absolute;text-align: center;left:60%;font-size:65px; font-family: 'Arizonia';
+
+}
+#can1_dream img{
+
+	width:380px;height: auto;
+
+}
+
+.zoomin{
+	-moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoomin:hover{
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#marquee{
+
+	color: white; font-size: 35px;position: absolute;top: 740px;left:8%;width: 85%;font-family: sans-serif;
+
+}
+
+.videos_style{
+	width: 360px;height: 225px;
+}
+
+
+.holder{
+	
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0px 0px 5px #333333
+	-webkit-transition:0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition:0.5s ease;
+	transition: 0.5s ease;
+	
+
+}
+
+
+.hov{
+	opacity: 0.9;
+}
+.hov:hover{
+	opacity: 1;
+	box-shadow: 0px 0px 10px #333333;
+
+}
+
+.go-top{
+	background-color: rgba(128,0,128,0.5);
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 0px;
+	top:600px;
+	width: 360px;
+	text-align: center;
+	font-size: 15px;
+	
+	-webkit-transition:0.5s ease;
+	-moz-transition:0.5s ease;
+	-o-transition:0.5s ease;
+	transition: 0.5s ease;
+}
+.hov:hover > .go-top{
+	top: 0px;
+}
+.go-top p{
+	font-size: 12px;
+}
+
+.imge{
+	width: 100%;
+	height: 100%;
+}
+.p1{
+	width: 360px;height:225px; top:830px;left: 185px;background-color: gray; position: absolute;
+}
+
+.p2{
+	width: 360px; float:left; height:225px;  top:830px;position: absolute;background-color: yellow;left: 53.5%;
+}
+
+.p3{
+
+	width: 360px; float:left; height:225px;  top:1090px;left: 185px; position: absolute;background-color: gray;
+}
+
+.p4{
+	width: 360px; float:left; height:225px;  top:1090px;position: absolute;background-color: yellow;left: 53.5%;
+}
+
+.p5{
+
+	width: 360px; float:left; height:225px; top:1350px;left: 185px; position: absolute;background-color: gray;
+}
+
+.p6{
+	width: 360px; float:left; height:225px;  top:1350px;position: absolute;background-color: yellow;left: 53.5%;
+}
+
+
+#footer{
+
+	height: 200px;background-color: #333;position: relative;
+}
+
+#fb{
+	position: absolute;left: 120px;top: 70px; height: 40px;width: 40px;border-radius: 50%;
+}
+
+#linkedin{
+	position:absolute;left: 200px;top: 70px; height: 40px;width: 40px;border-radius: 50%;
+}
+
+#twitter{
+	position: absolute;left: 280px;top: 70px; height: 40px;width: 40px;border-radius: 50%;
+}
+
+#insta{
+	position:absolute;left: 360px;top: 70px; height: 40px;width: 40px;border-radius: 50%;
+}
+
+#contact{
+	width:auto;position: absolute;right: 140px;top: 60px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 170px;
+  margin-bottom: 30px;
+  margin-right: 130px;
+  display: inline-block;
+  border: none;
+  color: black;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.label{
+
+	color: white;font-family: sans-serif;margin-left: 170px;font-weight: 300;margin-bottom: 10px;
+
+}
+
+/* Set a style for all buttons */
+#contact {
+  background-color: #333;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+  box-sizing: border-box;border-style: solid;border-width: 0.5px;
+  border-color:white;
+}
+
+#contact:hover {
+  opacity:0.7;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  border: 0.2px solid #ffffff;
+  z-index: 1; /* Sit on top */
+  left: 18%;
+  top: 3%;
+  right: 20%;
+  width: 60%; /* Full width */
+  height: 95%; /* Full height */
+  overflow:auto ; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 5px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-top: 2%;
+  margin-left: 15%; /* 5% from the top, 15% from the bottom and centered */
+  border: 0.2px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 0.2px solid #f1f1f1;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f1f1f1;
+
+}
+
+.text_close{
+	position: absolute;
+	left: 20%;
+	top: 10px;
+	font-size: 30px;
+	color: white;
+	font-family: sans-serif;
+	margin-bottom: 50px;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #888;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#end{
+
+	height: 40px;background-color:black;color: white;font-size: 13px;position: relative;
+}
+
+#end_p{
+
+	position: absolute;top: 2px;left: 9.6%
+
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+/*
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+}
+
+.topnav ul  li {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: sticky;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*/
+
+/*
+@media screen and (max-width: 800px) {
+  .topnav ul a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  
+.topnav ul a.icon {
+    float: right;
+    display: block;
+  }
+   
+
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive ul a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+ .can{
+	background-image: url('{% static 'main_pic1.png' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height:800px;
+}
+
+.can_h2{
+
+	position: absolute; top:140px;left:18%;right: 50px;color:white;font-size: 28px;font-family:sans-serif;font-weight: 500;
+
+
+}
+
+.can_p{
+
+	position: absolute; top:220px;left: 7%;right: 20px;color: white;
+  font-size:16px; font-family: Arial, Helvetica, sans-serif;text-align: center;
+}
+
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+}
+
+
+*/
+
+/*
+
+
+*/
+
+
+
+@media screen and (max-width: 800px){
+
+.can{
+	background-image: url('{% static 'main_pic1.png' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height:800px;
+}
+
+.can_h2{
+
+	position: absolute; top:140px;left:18%;right: 50px;color:white;font-size: 28px;font-family:sans-serif;font-weight: 500;
+
+
+}
+
+.can_p{
+
+	position: absolute; top:220px;left: 7%;right: 20px;color: white;
+  font-size:16px; font-family: Arial, Helvetica, sans-serif;text-align: center;
+}
+
+
+.li a:hover,.li1 a:hover,.li2 a:hover {
+  
+  transform: scale(1); 
+  opacity: 0.5;
+}
+
+
+.ul_hr{
+  border: 0.7px solid #000;
+  display: none;
+  margin-bottom:  5px;
+  margin-top: 5px;
+
+
+}
+
+
+.li{
+  float: none;
+   padding: 5px 2px;
+   margin-bottom: 0;
+   font-size: 14.5px;
+   margin-left: 43px;
+   text-align: left;
+   display: none;
+}
+
+.li a{
+	text-align: left;
+}
+.li1 a{
+	text-align: left;
+}
+
+
+.li2 a{
+	text-align: left;
+}
+
+.li2{
+  float: none;
+   padding-bottom: 10px;
+   padding-top: 5px;
+   font-size: 14.5px;
+   margin-left: 33px;
+   text-align: left;
+   display: none;
+   }
+
+.li1{
+
+	float: none;
+   padding: 5px 2px;
+   font-size: 14.5px;
+   margin-left: 43px;
+   text-align: left;
+   display: none;
+   margin-bottom: 3px;
+
+}
+
+.name_navbar{
+	 float:left;margin-left: 43px; font-family: sans-serif;color:white;box-sizing: border-box;padding: 8px;margin-top: 7px;border-style: solid;border-width: 1px;font-size: 24px;margin-bottom: 5px;
+
+}
+
+#upBtn{
+
+	display: block;
+	float: right;
+	margin-top: 11px;
+	margin-right: 10px;
+	background-color: gray;
+	border-radius: 50%;
+	border: none;
+}
+
+#downBtn{
+
+	display: none;
+	float: right;
+	margin-top: 11px;
+	margin-bottom: 0;
+	margin-right: 10px;
+	background-color: gray;
+	border-radius: 50%;
+	border: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+ .ul a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #para{
+  	margin-left: 40px;
+  	margin-right: 40px;
+  }
+
+  #about{
+	width: 80%; float:left; height:auto; margin-top:12px;margin-left: 40px;margin-right: 20px;
+}
+
+#about_h2{
+
+	font-family: Arial, Helvetica, sans-serif;color: #666666;font-size: 35px;margin-right: 30px;letter-spacing: 0.6px;
+
+}
+
+#about_h4{
+	font-style:normal;font-weight:normal;font-family:sans-serif;letter-spacing: 0.4px;font-size: 22px;
+}
+
+.pic{
+	margin-top: 30px;
+	height: 500px;
+	width: 500px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	width: 80%;
+  
+}
+
+#para_h5{
+	font-size: 14px;font-family:sans-serif;font-style: normal;font-weight:400;line-height: 22px;word-spacing: normal;
+}
+
+
+.can1{
+	background-size: cover;
+	background-color: rgba(0,0,0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	min-height:2000px; 
+	overflow-x: hidden;
+}
+
+#can1_albert img{
+	width:60%;height: 350px;
+}
+
+
+#can1_albert{
+	color: white;position: absolute;left:0;
+}
+
+
+#can1_dream{
+	color: white;top: 100px;position: absolute;text-align: center;left:65%;font-size:65px; font-family: 'Arizonia';
+
+}
+
+#can1_dream img{
+
+	width:130px;height: auto;
+
+}
+
+#marquee{
+
+	color: white; font-size: 20px;position: absolute;top: 380px;left:0;width: 100%;font-family: sans-serif;
+
+}
+
+.videos_style{
+	width: 360px;height: 225px;
+}
+
+.p1{
+	width: 360px;height:225px; top:440px;left: 25px;position: absolute;
+}
+
+.p2{
+	width: 360px; float:none; height:225px; top:700px;position: absolute;left:25px;
+}
+
+.p3{
+
+	width: 360px; height:225px;  top:960px;left: 25px; position: absolute;float: none;
+}
+
+.p4{
+	width: 360px; float:none; height:225px;  top:1220px;position: absolute;left: 25px;
+}
+
+.p5{
+
+	width: 360px; float:none; height:225px;  top:1480px;left: 25px; position: absolute;
+}
+
+.p6{
+	width: 360px; float:none; height:225px;  top:1740px;position: absolute;left:25px;
+}
+
+
+#footer{
+
+	height: 100px;background-color: #333;position: relative;
+}
+
+
+#fb{
+	position: absolute;left: 30px;top: 30px; height: 30px;width: 30px;border-radius: 50%;
+}
+
+#linkedin{
+	position:absolute;left: 80px;top: 30px; height: 30px;width: 30px;border-radius: 50%;
+}
+
+#twitter{
+	position: absolute;left: 130px;top: 30px; height: 30px;width: 30px;border-radius: 50%;
+}
+
+#insta{
+	position:absolute;left: 180px;top: 30px; height: 30px;width: 30px;border-radius: 50%;
+}
+
+#contact{
+	width:auto;position: absolute;right: 30px;top: 20px;
+
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  border: 0.2px solid #ffffff;
+  z-index: 1; /* Sit on top */
+  left: 5%;
+  top: 3%;
+  right: 5%;
+  bottom: 3%;
+  width: 90%; /* Full width */
+  height: 95%; /* Full height */
+  overflow:auto ; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 5px;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  margin-right: 70px;
+  display: inline-block;
+  border: none;
+  color: black;
+  background: #f1f1f1;
+}
+
+
+.label{
+
+	color: white;font-family: sans-serif;margin-left: 90px;font-weight: 300;margin-bottom: 10px;
+
+}
+
+#end{
+
+	height: 40px;background-color:black;color: white;font-size: 8.5px;position: relative;
+}
+
+#end_p{
+
+	position: absolute;top: 8px;left: 9%
+
+}
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div>
+<div class="can">
+  <h2 class="can_h2">DHANUSH PABBATHI</h2>
+  <p class="can_p">Theoretical Physicist working on an unfulfilled dream of Albert Einstein</p>
+
+</div>
+<ul class="ul" style="font-family: sans-serif;">
+  <li><img src="{% static 'menu-icon.png' %}" id="downBtn" style="filter:invert(100%);width: 35px;height: 35px;" onclick="function3()"></li>
+  <li class="name_navbar" id="name_navbar1">DHANUSH PABBATHI</li>
+  <hr class="ul_hr">
+  <li class="li1" id="lii1"><a href="#">Home</a></li>
+  <hr class="ul_hr">
+  <li class="li" id="lii"><a href="{% url 'account:aboutdhanush' %}">About</a></li>
+  <hr class="ul_hr">
+  <li class="li"><a href="">Projects</a>
+  </li>
+  <hr class="ul_hr">
+  <li class="li" id="lii"><a href="{% url 'account:albert' %}">Albert's Dream</a></li>
+  <hr class="ul_hr">
+  <li class="li2" id="lii2"><a class="active" href="#"  onclick="document.getElementById('id01').style.display='block';">Contact</a></li>
+  <li><img src="{% static 'menu-icon.png' %}" style="width: 35px;height: 35px;" id="upBtn" onclick="function2()"></li>
+  
+</ul>
+
+<img src="{% static 'arrow.png' %}" style="height: 35px;width: 35px;" onclick="topFunction()"  id="myBtn">
+<div>
+<div id="about">
+	<h2 id="about_h2">
+	About Dhanush
+</h2>
+
+<h4 id="about_h4">
+	Theoretical Physicist,working on an unfulfilled dream of Albert Einstein and Human Immortality with controlled rejuvenation.
+</h4>
+</div>
+
+<div class="pic">
+	<img src="{% static 'dhanush.jpg' %}" alt="portrait" style=" height: 500px;width: 550px;">
+  
+</div>
+
+
+
+</div>
+
+<div id="para">
+	
+
+	<h5 id="para_h5">
+
+		There are many unascertained and beautiful propossessing stories yet to be told to nature about its nature by nature - we humans, having an average  mass of 70 kilograms is made up of approximately seven octillion  number of atoms,the atoms in our left eye and atoms in the right eye might come from two distinct burning stars at distance  about several billion light-years of two different galaxies and also along with consciousness as an intrinsic property binding this two together to form what we experience....life!
+
+		<br>
+		<br>
+
+		We can say or think that we come from nature, we are part of universe and moreover universe is within us,and we are studying about nature so it is an astonishing fact that something came from nothing and this something means we humans got consciousness  and thinking about the one that we got from nothing; its a deep obsession of this closed loop and moreover we human species experience this which makes very much special in this unfathomable unique world and also to believe that we are the universe.
+		<br>
+		<br>
+		Although we live in perplexing periods of time in understanding the design of everything that we see around us, mathematics keeps us to come out of this sphinxlike enigma.So just sitting on desk with pen and paper and predicting the laws of Universe allowed by the math is an incredible job.Mathematics is a language of universe whereas science is a systamatic study of universe using mathematics.
+		<br>
+		<br>
+
+Dinosaurs became extinct to this world because they dont have solution from the asteroid  hitting the planet but whereas, we humans are special since our brains are evolved with this spectacular thinking power to solve problems of nature and also having several solutions to the above problems, thereby we can say that it is necessary to understand the laws of physics and to implement in daily life otherwise there will not be any difference between us and other species.
+<br>
+<br>
+
+Finally it is so important to know the design,function and governance of our surroundings to move ahead into higher civilization and  become immortal humans to this world. This is our ultimate task for  every individual to be true and real for being special and special and special....alone in this elegant universe.
+	</h5>
+
+</div>
+
+
+<div class="can1">
+	
+	<div id="can1_albert">
+		<img src="{% static 'albert.jpg' %}">
+	</div>
+	<div id="can1_dream">
+		<a href="{% url 'account:albert' %}"><img class="zoomin" src="{% static 'dream.png' %}"></a>
+	</div>
+
+	<marquee id="marquee" scrollamount="16">Discover yourself by asking the most important astonishing questions in the history of science.</marquee>
+
+	<div class="p1">
+	    <div class="holder hov videos_style">
+        <img class="videos_style" src="{% static 'image1.png' %}" alt="Web Tutorial Plus - Demo">
+        <div class="go-top">
+           
+           
+           <h4 style="margin-top: 100px;"><a style="color: white;" href=" https://www.youtube.com/watch?v=DACcyBN5Jng" >Click Here...</a></h4>
+        </div>
+    </div>
+</div>
+	
+<div class="p2">
+<div class="holder hov videos_style">
+        <img class="videos_style" src="{% static 'image2.png' %}" alt="Web Tutorial Plus - Demo">
+        <div class="go-top">
+             <h4 style="margin-top: 100px;color: white;"><a href=" https://www.youtube.com/watch?v=0NbBjNiw4tk" style="color: white;">Click Here...</a></h4>
+        </div>
+    </div>
+</div>
+
+<div class="p3">
+	<div class="holder hov videos_style">
+        <img class="videos_style" src="{% static 'image3.png' %}" alt="Web Tutorial Plus - Demo">
+        <div class="go-top">
+            
+            <h4 style="margin-top: 100px;"><a style="color: white;" href="https://www.youtube.com/watch?v=JqJEyqSX8Ng&list=PLUWhjoyyyez9Q84nWNoRYWk9nlavjEWPM">Click Here...</a></h4>
+            
+        </div>
+    </div>
+</div>
+
+<div class="p4">
+
+	<div class="holder hov videos_style">
+        <img class="videos_style" src="{% static 'image4.png' %}" alt="Web Tutorial Plus - Demo">
+        <div class="go-top">
+        <h4 style="margin-top: 100px;"><a style="color: white;" href="https://www.youtube.com/watch?v=xyhZcEY5PCQ">Click Here...</a></h4>
+        </div>
+    </div>
+
+</div>
+
+<div class="p5">
+
+	<div class="holder hov videos_style">
+        <img class="videos_style" src="{% static 'image5.png' %}" alt="Web Tutorial Plus - Demo">
+        <div class="go-top">
+        <h4 style="margin-top: 100px;"><a style="color: white;" href="https://www.youtube.com/watch?v=qNlYMPmaMhs">Click Here...</a></h4>
+        </div>
+    </div>
+
+</div>
+
+<div class="p6">
+
+	<div class="holder hov videos_style">
+        <img class="videos_style" src="{% static 'image6.png' %}" alt="Web Tutorial Plus - Demo">
+        <div class="go-top">
+            
+        <h4 style="margin-top: 100px;"><a style="color: white;" href="https://www.youtube.com/watch?v=TBikbn5XJhg&t=51s">Click Here...</a></h4>
+        </div>
+    </div>
+
+</div>
+	
+</div>
+
+<footer id="footer">
+	
+	
+	<a  href="https://www.facebook.com/Dhanush-Pabbathi-410403666374826/"><img id="fb" src="{% static 'fb.png' %}"></a>
+	<a  href="https://www.linkedin.com/in/dhanush-pabbathi-950131181/"><img id="linkedin" src="{% static 'linkedin.png' %}"></a>
+	<a  href="https://twitter.com/Dhanush93897062"><img id="twitter" src="{% static 'Twitter.png' %}" ></a>
+	<a  href="https://www.instagram.com/dhanush_inatagram/"><img id="insta" src="{% static 'insta.jpg' %}"></a>
+	<button id="contact" onclick="document.getElementById('id01').style.display='block';">Contact us</button>
+	
+
+	<div id="id01" class="modal">
+	
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+  <form action="#">
+    <div class="container">
+      
+      <hr>
+      <label for="Name" class="label">Name</label>
+      <input type="text" placeholder="Enter Name" name="email" required>
+
+      <label for="Email Id " class="label"><b>Email Id</b></label>
+      <input type="text" placeholder="Enter Email" name="psw" required>
+
+      <label for="Message" class="label"><b>Message</b></label>
+      <textarea id="mytextarea" rows="11" cols="88" placeholder="Your Message" name="Message" style="border-color: none;margin-top: 3px;"></textarea>
+      <button type="submit" class="btn btn-outline-success my-2 my-sm-0" style="margin-left: 45%;">Submit</button>
+      
+
+      
+    </div>
+  </form>
+</div>
+
+	
+</footer>
+
+<div id="end">
+		<p id="end_p"> Copyright 2019   |   Dhanush Pabbathi  |   Designed by Mudassir Ali   |   All Rights Reserved</p>
+		
+	</div>
+</div>
+
+
+
+
+
+
+<script>
+
+	function dropdownFunction() {
+  document.getElementById("myDropdown").style.display="block";
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropdown_button')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("myBtn").style.display = "block";
+
+
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+
+  if(screen.width<800){
+  	document.getElementById('mytextarea').cols='43';
+
+  }
+
+
+
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function myFunction1() {
+  var y = document.getElementsByClassName("ul");
+  if (y === "ul") {
+    y= "responsive";
+  } else {
+    y= "ul";
+  }
+}
+
+function function2(){
+	if (document.getElementById("lii1").style.display="none"){
+
+	document.getElementById("lii1").style.display="block";
+	document.getElementById("lii2").style.display="block";
+	document.getElementById("name_navbar1").style.float="none";
+	
+	document.getElementById("name_navbar1").style.marginRight="120px";
+	document.getElementById("name_navbar1").style.display="block";
+	
+	var a =document.getElementsByClassName("li");
+	var b =document.getElementsByClassName("ul_hr");
+	
+	var i,j;
+	for(i=0;i<a.length;i++){
+		a[i].style.display="block";
+		b[i].style.display="block";
+	}
+
+	for(j=0;j<b.length;j++){
+		b[j].style.display="block";
+	}
+
+	document.getElementById("upBtn").style.display="none";
+	document.getElementById("downBtn").style.display="block";
+
+	}
+
+	
+	
+	
+}
+
+function function3(){
+	if (document.getElementById("lii1").style.display="block"){
+
+		document.getElementById("lii1").style.display="none";
+	document.getElementById("lii2").style.display="none";
+	document.getElementById("name_navbar1").style.display="block";
+	document.getElementById("name_navbar1").style.float="left";
+	document.getElementById("name_navbar1").style.marginRight="0px";
+	
+	var a =document.getElementsByClassName("li");
+	var b =document.getElementsByClassName("ul_hr");
+	
+	var i,j;
+	for(i=0;i<a.length;i++){
+		a[i].style.display="none";
+	}
+
+	for(j=0;j<b.length;j++){
+		b[j].style.display="none";
+	}
+
+	document.getElementById("upBtn").style.display="block";
+	document.getElementById("downBtn").style.display="none";
+
+
+
+
+
+	}
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

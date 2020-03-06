@@ -1,0 +1,1210 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style type="text/css">
+		body{
+	overflow-x: hidden;
+	margin: 0;
+	padding:0;
+}
+*{
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.first{
+	background-image: url('{% static 'nebula.jpg' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	min-width: 100%;
+
+}
+
+.second{
+	margin-top: 600px;
+	background-image: url('{% static 'milkyway.jpg' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	position: relative;
+
+}
+
+.third{
+	background-image: url('{% static 'space.jpg' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	position: relative;
+
+}
+
+.fourth{
+	background-image: url('{% static 'human.png' %}');
+	background-size: contain;
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+
+}
+
+
+#intro {
+	display: block;
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title {
+
+	color: white;
+	font-size: 80px;
+	font-family: sans-serif;
+	font-weight: 500;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro1 {
+	display: block;
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+#title1 {
+
+	color: white;
+	font-size: 70px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sectitletop0 1s ease-in-out 100ms forwards;
+  animation: sectitletop0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro2 {
+	display: block;
+  position: fixed;
+  top: 70%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title2 {
+	display: block;
+
+	color: white;
+	font-size: 80px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+
+#intro3 {
+	display: none;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title3 {
+
+	color: white;
+	font-size: 80px;
+	font-family: sans-serif;
+	font-weight: 500;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: secbottom0 1s ease-in-out 100ms forwards;
+  animation: secbottom0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro4 {
+	display: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+#title4 {
+
+	color: white;
+	font-size: 70px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: secbottom0 1s ease-in-out 100ms forwards;
+  animation: secbottom0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro5 {
+	display: none;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title5 {
+	display: block;
+
+	color: white;
+	font-size: 80px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: secbottom0 1s ease-in-out 100ms forwards;
+  animation: secbottom0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro6 {
+	display: none;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title6 {
+
+	color: white;
+	font-size: 80px;
+	font-family: sans-serif;
+	font-weight: 500;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: secbottom0 1s ease-in-out 100ms forwards;
+  animation: secbottom0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro7 {
+	display: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+#title7 {
+
+	color: white;
+	font-size: 70px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: secbottom0 1s ease-in-out 100ms forwards;
+  animation: secbottom0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro8 {
+	display: none;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title8 {
+	display: block;
+
+	color: white;
+	font-size: 80px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: secbottom0 1s ease-in-out 100ms forwards;
+  animation: secbottom0 1s ease-in-out 100ms forwards;
+  
+}
+
+
+
+
+
+#socialmedia{
+	display: none;
+	
+}
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+#fb:hover,#linkedin:hover,#twitter:hover,#insta:hover {
+
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#myBtn:hover,.pic:hover img{
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#fb{
+	position:fixed;left: 20px;top: 30%; height: 30px;width: 30px;border-radius: 50%;
+	z-index: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#linkedin{
+	position:fixed;left: 20px;top: 37%; height: 30px;width: 30px;border-radius: 50%;
+	z-index: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#twitter{
+	position: fixed;left: 20px;top: 44%; height: 30px;width: 30px;border-radius: 50%;
+	z-index: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#insta{
+	position:fixed;left: 20px;top: 51%; height: 30px;width: 30px;border-radius: 50%;
+	z-index: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	
+}
+
+
+
+
+.fourthdiv{
+	margin-left: 60px;margin-right: 60px;
+}
+
+.seconddiv{
+	margin-left: 60px;margin-right: 60px;
+}
+
+.thirddiv{
+	margin-left: 60px;margin-right: 60px;
+}
+
+#fourthdivimage1{
+	margin-left: 35px;
+	width: 95%;
+	height: auto;
+}
+
+#fourthdivimage2{
+	width: 100%;
+	height: auto;
+	margin-left: 35px;
+	margin-top: 20px;
+}
+
+.pic{
+	
+	float: left;
+	margin-top: 30px;
+
+	
+	margin-right: 10px;
+	margin-left: 120px;
+	 position: relative;
+	width: 390px;
+	
+	 overflow: hidden;
+	
+	
+  
+}
+
+.pic img{
+	
+	
+	 height: 500px;width: 390px;
+	max-width: 100%;
+	transition: all 0.3s;
+	-webkit-transition:all 0.2s;
+	-moz-transition:all 0.2s;
+}
+
+.introtext{
+
+	margin-left: 40px;
+	float: left;
+	margin-top: 30px;
+	margin-right: 70px;
+
+	width: 40%;
+	
+	height: auto;
+	
+}
+
+#introtext_h2{
+	text-align: left;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 8px #333;
+	font-weight: 400;
+
+	font-family: Arial, Helvetica, sans-serif;color: #666666;font-size:40px;letter-spacing: 0.6px;
+
+}
+
+
+#introtext_h3{
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 30px;
+	font-weight: 400;
+
+	font-family: Arial, Helvetica, sans-serif;color: #666666;font-size: 20px;letter-spacing: 0.6px;
+
+}
+
+#end{
+
+	height: 22px;background-color:black;color: white;font-size: 15px;position: relative;color: gray;
+}
+
+#end_p{
+
+	position: absolute;top: 5px;left: 27.6%
+
+}
+
+
+@media screen and (max-width: 800px){
+
+	.first{
+	background-image: url('{% static 'nebula.jpg' %}');
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	width: 100%;
+
+}
+
+	#intro {
+	display: block;
+  position: fixed;
+  top: 31%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title {
+
+	color: white;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: 500;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro1 {
+	display: block;
+  position: fixed;
+  top: 42%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+#title1 {
+
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sectitletop0 1s ease-in-out 100ms forwards;
+  animation: sectitletop0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro2 {
+	display: block;
+  position: fixed;
+  top: 53%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title2 {
+	display: block;
+
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+.second{
+	margin-top: 10px;
+	background-image: url('{% static 'milkyway.jpg' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	position: relative;
+
+}
+
+#intro3 {
+	display: block;
+  position: absolute;
+  top: 31%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title3 {
+
+	color: white;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: 500;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro4 {
+	display: block;
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+#title4 {
+
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sectitletop0 1s ease-in-out 100ms forwards;
+  animation: sectitletop0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro5 {
+	display: block;
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title5 {
+	display: block;
+
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+
+.third{
+	background-image: url('{% static 'space.jpg' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	position: relative;
+
+}
+
+#intro6 {
+	display: block;
+  position: absolute;
+  top: 31%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title6 {
+
+	color: white;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: 500;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro7 {
+	display: block;
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+#title7 {
+
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sectitletop0 1s ease-in-out 100ms forwards;
+  animation: sectitletop0 1s ease-in-out 100ms forwards;
+  
+}
+
+#intro8 {
+	display: block;
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title8 {
+	display: block;
+
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: sans-serif;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+  
+}
+
+
+
+.pic{
+	float: none;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-right: 10px;
+	height: auto;
+	width: 300px;
+	
+	 overflow: hidden;
+	
+	margin-left: 60px;
+	
+  
+}
+
+.pic img{
+	 height: 450px;width: 300px;
+	max-width: 100%;
+	transition: all 0.3s;
+	-webkit-transition:all 0.2s;
+	-moz-transition:all 0.2s;
+}
+
+.introtext{
+	margin-left: 10px;
+	margin-right: 30px;
+	float: none;
+	margin-top: 30px;
+
+	width: 100%;
+	
+	height: auto;
+	
+}
+
+#introtext_h2{
+	text-align: left;
+
+	font-family: Arial, Helvetica, sans-serif;color: #666666;letter-spacing: 0.2px;margin-bottom: 8px;
+
+}
+
+#introtext_h3{
+	text-align: left;
+
+	font-family: Arial, Helvetica, sans-serif;color: #666666;font-size: 20px;letter-spacing: 0.2px;
+
+}
+
+
+#end{
+
+	height: 40px;background-color:black;color: white;font-size: 8.5px;position: relative;
+}
+
+#end_p{
+
+	position: absolute;top: 8px;left: 9%
+
+}
+
+.seconddiv{
+	margin-left: 60px;margin-right: 40px;
+}
+
+.thirddiv{
+	margin-left: 60px;margin-right: 40px;
+}
+
+
+.fourthdiv{
+	margin-left: 25px;margin-right: 20px;
+}
+
+
+#fourthdivimage1{
+	margin-left: 20px;
+	width: 95%;
+	height: auto;
+}
+
+#fourthdivimage2{
+	width: 100%;
+	height: auto;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+
+
+}
+
+
+
+@-webkit-keyframes 
+sectitle0 {  0% {
+ -webkit-transform: translateX(-100%);
+ transform: translateX(-100%);
+}
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+}
+ @keyframes 
+sectitle0 {  0% {
+ -webkit-transform: translateX(-100%);
+ transform: translateX(-100%);
+}
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+}
+
+@keyframes
+
+sectitletop0 {  0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+}
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+
+ @-webkit-keyframes 
+sec0 {  0% {
+ -webkit-transform: translateX(100%);
+ transform: translateX(100%);
+}
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+}
+ @keyframes 
+sec0 {  0% {
+ -webkit-transform: translateX(100%);
+ transform: translateX(100%);
+}
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+}
+
+@keyframes 
+secbottom0 {  0% {
+ -webkit-transform: translateY(100%);
+ transform: translateY(100%);
+}
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="first">
+		<div id="intro">
+			<h2 id="title">
+				All About Einstein's Dream
+			</h2>
+
+		</div>
+
+		<div id="intro1">
+			<h2 id="title1">
+				And
+			</h2>
+
+		</div>
+
+		<div id="intro2">
+			<h2 id="title2">
+				Human Immortality
+			</h2>
+			
+		</div>
+
+	</div>
+
+	<img src="{% static 'arrow.png' %}" style="height: 35px;width: 35px;" onclick="topFunction()"  id="myBtn">
+
+	<div id="socialmedia">
+		<a  href="https://www.facebook.com/Dhanush-Pabbathi-410403666374826/"><img id="fb" src="{% static 'fb.png' %}"></a>
+	<a  href="https://www.linkedin.com/in/dhanush-pabbathi-950131181/"><img id="linkedin" src="{% static 'linkedin.png' %}"></a>
+	<a  href="https://twitter.com/Dhanush93897062"><img id="twitter" src="{% static 'twitter.png' %}" ></a>
+	<a  href="https://www.instagram.com/dhanush_inatagram/"><img id="insta" src="{% static 'insta.jpg' %}"></a>
+
+		
+	</div>
+
+	<div class="firstdiv">
+		<div>
+			<img src="{% static 'img_div1.png' %}" alt="portrait" style=" height:100%;width:100%">
+			
+		</div>
+		
+		<div class="pic">
+	       <img src="{% static 'dhanush.jpg' %}" alt="portrait">
+        </div>
+        <div class="introtext">
+        	<h2 id="introtext_h2">
+        		BACKGROUND
+        	</h2>
+        	<h3 id="introtext_h3">
+        		Dhanush is a theoretical physicist, specially working on 'The Grand Unified' theory of science with extreme deep insight into it which emphazises and describes the things happening in the nature.
+        		<br>
+        		He was deeply fascinated and inspired with the forgotten and untold dream evertold so far of the Albert Einstein and his legacy.He was also working on Human Immortality project from past few years which he believes that one day people gets superior power over death and disease.
+        		
+        	</h3>
+        	
+        </div>
+	</div>
+
+	<div class="second">
+
+		<div id="intro3">
+			<h2 id="title3">
+				All About Einstein's Dream
+			</h2>
+
+		</div>
+
+		<div id="intro4">
+			<h2 id="title4">
+				And
+			</h2>
+
+		</div>
+
+		<div id="intro5">
+			<h2 id="title5">
+				Human Immortality
+			</h2>
+			
+		</div>
+		
+	</div>
+
+	<div class="seconddiv">
+		<h5 style="font-size: 17px;font-family:'Abel';font-weight:500;letter-spacing: 1.0px;line-height: 22px;">
+
+		There are many unascertained and beautiful propossessing stories yet to be told to nature about its nature by nature - we humans, having an average  mass of 70 kilograms is made up of approximately seven octillion  number of atoms,the atoms in our left eye and atoms in the right eye might come from two distinct burning stars at distance  about several billion light-years of two different galaxies and also along with consciousness as an intrinsic property binding this two together to form what we experience....life!
+
+		<br>
+		<br>
+
+		We can say or think that we come from nature, we are part of universe and moreover universe is within us,and we are studying about nature so it is an astonishing fact that something came from nothing and this something means we humans got consciousness  and thinking about the one that we got from nothing; its a deep obsession of this closed loop and moreover we human species experience this which makes very much special in this unfathomable unique world and also to believe that we are the universe.
+		<br>
+		<br>
+		Although we live in perplexing periods of time in understanding the design of everything that we see around us, mathematics keeps us to come out of this sphinxlike enigma.So just sitting on desk with pen and paper and predicting the laws of Universe allowed by the math is an incredible job.Mathematics is a language of universe whereas science is a systamatic study of universe using mathematics.
+		<br>
+		<br>
+
+Dinosaurs became extinct to this world because they dont have solution from the asteroid  hitting the planet but whereas, we humans are special since our brains are evolved with this spectacular thinking power to solve problems of nature and also having several solutions to the above problems, thereby we can say that it is necessary to understand the laws of physics and to implement in daily life otherwise there will not be any difference between us and other species.
+<br>
+<br>
+
+Finally it is so important to know the design,function and governance of our surroundings to move ahead into higher civilization and  become immortal humans to this world. This is our ultimate task for  every individual to be true and real for being special and special and special....alone in this elegant universe.
+	</h5>
+	
+
+	</div>
+
+
+	<div class="third">
+
+		<div id="intro6">
+			<h2 id="title6">
+				All About Einstein's Dream
+			</h2>
+
+		</div>
+
+		<div id="intro7">
+			<h2 id="title7">
+				And
+			</h2>
+
+		</div>
+
+		<div id="intro8">
+			<h2 id="title8">
+				Human Immortality
+			</h2>
+			
+		</div>
+		
+	</div>
+
+	<div class="thirddiv">
+		<h5 style="font-size: 17px;font-family:'Abel';font-weight:500;letter-spacing: 1.0px;line-height: 22px;">
+
+		There are many unascertained and beautiful propossessing stories yet to be told to nature about its nature by nature - we humans, having an average  mass of 70 kilograms is made up of approximately seven octillion  number of atoms,the atoms in our left eye and atoms in the right eye might come from two distinct burning stars at distance  about several billion light-years of two different galaxies and also along with consciousness as an intrinsic property binding this two together to form what we experience....life!
+
+		<br>
+		<br>
+
+		We can say or think that we come from nature, we are part of universe and moreover universe is within us,and we are studying about nature so it is an astonishing fact that something came from nothing and this something means we humans got consciousness  and thinking about the one that we got from nothing; its a deep obsession of this closed loop and moreover we human species experience this which makes very much special in this unfathomable unique world and also to believe that we are the universe.
+		<br>
+		<br>
+		Although we live in perplexing periods of time in understanding the design of everything that we see around us, mathematics keeps us to come out of this sphinxlike enigma.So just sitting on desk with pen and paper and predicting the laws of Universe allowed by the math is an incredible job.Mathematics is a language of universe whereas science is a systamatic study of universe using mathematics.
+		<br>
+		<br>
+
+Dinosaurs became extinct to this world because they dont have solution from the asteroid  hitting the planet but whereas, we humans are special since our brains are evolved with this spectacular thinking power to solve problems of nature and also having several solutions to the above problems, thereby we can say that it is necessary to understand the laws of physics and to implement in daily life otherwise there will not be any difference between us and other species.
+<br>
+<br>
+
+Finally it is so important to know the design,function and governance of our surroundings to move ahead into higher civilization and  become immortal humans to this world. This is our ultimate task for  every individual to be true and real for being special and special and special....alone in this elegant universe.
+	</h5>
+
+	</div>
+
+
+	<div class="fourth">
+		
+	</div>
+
+	<div class="fourthdiv">
+		<img id="fourthdivimage1" src="{% static 'human1.png' %}">
+		<img id="fourthdivimage2" src="{% static 'human2.png' %}">
+	</div>
+	
+</div>
+
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    document.getElementById("socialmedia").style.display = "block";
+    document.getElementById("myBtn").style.display = "block";
+
+
+  } else {
+    document.getElementById("socialmedia").style.display = "none";
+     document.getElementById("myBtn").style.display = "none";
+
+  }
+
+  if(document.body.scrollTop>170 || document.documentElement.scrollTop>170){
+  	document.getElementById('title2').style.display='none';
+
+  }
+
+  else{
+
+  	document.getElementById('title2').style.display='block';
+
+
+  }
+
+  if(document.body.scrollTop>280 || document.documentElement.scrollTop>280){
+  	document.getElementById('intro1').style.display='none';
+
+  }
+
+  else{
+
+  	document.getElementById('intro1').style.display='block';
+
+
+  }
+
+  if(document.body.scrollTop>370 || document.documentElement.scrollTop>370){
+  	document.getElementById('intro').style.display='none';
+
+  }
+
+  else{
+
+  	document.getElementById('intro').style.display='block';
+
+
+  }
+
+  if (screen.width>1000){
+
+  if(document.body.scrollTop>1600 || document.documentElement.scrollTop>1600){
+  	document.getElementById('intro3').style.display='block';
+
+  }
+
+  else{
+
+  	document.getElementById('intro3').style.display='none';
+
+
+  }
+
+   if(document.body.scrollTop>1700 || document.documentElement.scrollTop>1700){
+  	document.getElementById('intro4').style.display='block';
+
+  }
+
+  else{
+
+  	document.getElementById('intro4').style.display='none';
+
+
+  }
+
+  if(document.body.scrollTop>1800 || document.documentElement.scrollTop>1800){
+  	document.getElementById('intro5').style.display='block';
+
+  }
+
+  else{
+
+  	document.getElementById('intro5').style.display='none';
+
+
+  }
+}
+
+
+if(screen.width>1000){
+  if(document.body.scrollTop>2800 || document.documentElement.scrollTop>2800){
+  	document.getElementById('intro6').style.display='block';
+
+  }
+
+  else{
+
+  	document.getElementById('intro6').style.display='none';
+
+
+  }
+
+   if(document.body.scrollTop>2900 || document.documentElement.scrollTop>2900){
+  	document.getElementById('intro7').style.display='block';
+
+  }
+
+  else{
+
+  	document.getElementById('intro7').style.display='none';
+
+
+  }
+
+  if(document.body.scrollTop>3000 || document.documentElement.scrollTop>3000){
+  	document.getElementById('intro8').style.display='block';
+
+  }
+
+  else{
+
+  	document.getElementById('intro8').style.display='none';
+
+
+  }
+
+
+}
+
+
+
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+
+</body>
+</html>

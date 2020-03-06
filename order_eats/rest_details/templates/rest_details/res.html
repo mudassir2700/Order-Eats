@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="{% url 'restinfo:setting_view' slug=slug %}" method="POST">
+		{% csrf_token %}
+		<input type="text" name="minres">Min_res
+		<input type="text" name="maxres">Max_res
+		<input type="text" name="nores">no_of_reservations
+		<button type="submit">save</button>
+		
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+	<title></title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</head>
+<body>
+	<div class="main">
+	<header>
+		<h1 style="text-align: center;">
+			Order Eat
+		</h1>
+	</header>
+	</div>
+	<div>
+		<section>
+			<table>
+			<th style="color: black">List of restaurants</th>
+			<th style="color: black">Cuisine</th>
+			
+			{% for i in obj %}
+			<tr>
+				{% if i.status %}
+
+				<td><a href="{% url 'account:reserve' slug=i.slug %}">{{i.Restaurant_name}}</a></td>
+				<td style="color:black;">{{i.Cuisines_You_Offer}}</td>
+				
+
+				{% endif %}
+
+			</tr>
+
+			{% endfor %}
+		</table>
+		</section>
+
+	</div>	
+	</br>
+	<hr>
+	<div class="wrapper">
+		<div >
+		<table>
+			<th>List of cuisines</th>
+			{% for j in obj %}
+			<tr>
+				<td><a href="{% url 'account:cui' cuisine_type=j.cuisine_type %}">
+				{% ifchanged j.cuisine_type %}
+			    {{j.cuisine_type}}
+			    {% endifchanged %}</a></td>
+			</tr>
+			{% endfor %}
+		</table>
+	    </div>
+	</div>
+	<div>
+		<h2>Customer table reservation status </h2>
+		<form action="{% url 'reservations:cust_table_reserve_check' %}" method="POST">
+			{% csrf_token %}
+			<input type="text" name="query" placeholder="Enter Reference Number">
+			<button type="submit">submit</button>
+		</form>
+	</div>
+	</section>
+	<div>
+		{% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li style="color:red">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+	</div>
+	
+
+</body>
+</html>

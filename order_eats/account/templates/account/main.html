@@ -1,0 +1,631 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+	
+	
+	
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		
+		
+body {
+	margin: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	display: block;
+
+	font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.9;
+  /*position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+   padding: 23px 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
+
+ 
+  text-decoration: none;
+}
+
+li a:hover {
+  
+  transform: scale(1.2); 
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+#myBtn:hover {
+
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+.can{
+	background-image: url('{% static 'mainpic.png' %}');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 600px;
+	position: relative;
+}
+.can1{
+	background-size: cover;
+	background-color: rgba(0,0,0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	min-height:1650px; 
+}
+
+.pic0 {  
+  float: left;
+  margin-top: 27px;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111; 
+  
+   
+}
+
+.pic{
+	margin-top: 30px;
+	height: 500px;
+	width: 500px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-left: 80px;
+  
+}
+
+.pic2{
+
+	margin-top: 30px;
+	height: 500px;
+	width: 500px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-left: 80px;
+	background-image: url('../images/9.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+  
+  border: 1px solid #333;
+
+}
+
+.pic2:hover {
+	 max-width: 100%;
+
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.pic img{
+	max-width: 100%;
+}
+
+
+.zoomin{
+	-moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoomin:hover{
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grow img {
+  height: 300px;
+  width: 300px;
+  margin-top: 30px;
+ 
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+       -o-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+ 
+.grow img:hover {
+  width: 400px;
+  height: 400px;
+
+}
+
+
+
+.pic1 {
+  border: 10px solid #fff;  
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+
+.imge{
+	width: 100%;
+	height: 100%;
+}
+.p1{
+	width: 360px;height:225px; margin-top:830px;margin-left: 215px;background-color: gray; position: absolute;
+}
+
+.p2{
+	width: 360px; float:left; height:225px;  margin-top:830px;margin-left: 40px; margin-right: 120px;position: absolute;background-color: yellow;left: 50%;
+}
+
+.p3{
+
+	width: 360px; float:left; height:225px;  margin-top:1090px;margin-left: 215px; position: absolute;background-color: gray;
+}
+
+.p4{
+	width: 360px; float:left; height:225px;  margin-top:1090px;margin-left: 40px; margin-right: 70px;position: absolute;background-color: yellow;left: 50%;
+}
+
+.p5{
+
+	width: 360px; float:left; height:225px;  margin-top:1350px;margin-left: 215px; position: absolute;background-color: gray;
+}
+
+.p6{
+	width: 360px; float:left; height:225px;  margin-top:1350px;margin-left: 40px; margin-right: 70px;position: absolute;background-color: yellow;left: 50%;
+}
+
+.holder{
+	
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0px 0px 5px #333333
+	-webkit-transition:0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition:0.5s ease;
+	transition: 0.5s ease;
+	
+
+}
+
+.hov{
+	opacity: 0.9;
+}
+.hov:hover{
+	opacity: 1;
+	box-shadow: 0px 0px 10px #333333;
+
+}
+.go-top{
+	background-color: rgba(128,0,128,0.5);
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 0px;
+	top:600px;
+	width: 360px;
+	text-align: center;
+	font-size: 15px;
+	
+	-webkit-transition:0.5s ease;
+	-moz-transition:0.5s ease;
+	-o-transition:0.5s ease;
+	transition: 0.5s ease;
+}
+.hov:hover > .go-top{
+	top: 0px;
+}
+.go-top p{
+	font-size: 12px;
+}
+
+
+
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  border: 1px solid #888;
+  z-index: 1; /* Sit on top */
+  left: 18%;
+  top: 3%;
+  right: 20%;
+  width: 60%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto ; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 5px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-top: 2%;
+  margin-left: 15%; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+	</style>
+</head>
+<body>
+
+<div class="can">
+  <div>
+  <h2 style="position: absolute; top:180px;left:31%;right: 100px;color:white;font-size: 50px;font-family:sans-serif;font-weight: 500;">DHANUSH PABBATHI</h2>
+  <p style="position: absolute; top:264px;left: 13%;right: 70px;color: white;
+  font-size:28px; font-family: Arial, Helvetica, sans-serif;">Theoretical Physicist,working on an unfulfilled dream of Albert Einstein</p>
+</div>
+</div>
+<ul style="font-family: sans-serif;">
+  <li style="margin-right: 30px; font-size: 16.5px;margin-left: 10px;"><a class="active" href="#">Contact</a></li>
+  <li style="font-size: 16.5px;margin-left: 10px;"><a href="#">Albert's Dream</a></li>
+  <li style="font-size: 16.5px;margin-left: 10px;"><a href="#">Projects</a></li>
+  <li style="font-size: 16.5px;margin-left: 10px;"><a href="#">About</a></li>
+  <li style="opacity: 0.5; font-size: 16.5px;margin-left: 10px;"><a href="#">Home</a></li>
+  <li style="float:left;margin-left: 110px; font-family: sans-serif;color:white;box-sizing: border-box;padding: 2px;margin-top: 15px;border-style: solid;border-width: 1px;font-size: 24px;">DHANUSH PABBATHI</li>
+</ul>
+
+<img src="{% static 'arrow.png' %}" style="height: 35px;width: 35px;" onclick="topFunction()"  id="myBtn">
+<div>
+<div style="width: 40%; float:left; height:auto; margin-top:22px;margin-left: 110px;margin-right: 80px;">
+	<h2 style="font-family: Arial, Helvetica, sans-serif;color: #666666;font-size: 40px;margin-right: 50px;letter-spacing: 0.6px;">
+	About Dhanush
+</h2>
+
+<h4 style="font-style:normal;font-weight:normal;font-family:sans-serif;letter-spacing: 0.6px;font-size: 30px;">
+	Theoretical Physicist,working on an unfulfilled dream of Albert Einstein and Human Immortality with controlled rejuvenation.
+</h4>
+</div>
+
+<div class="pic" style="width: 34%;">
+	<img src="{% static 'dhanush.jpg' %}" alt="portrait" style=" height: 500px;width: 550px;">
+  
+</div>
+
+
+
+</div>
+<div style="margin-top: 20px;margin-left: 110px;margin-right: 100px;">
+	
+
+	<h5 style="font-size: 17px;font-family:'Abel';font-weight:500;letter-spacing: 1.0px;line-height: 22px;">
+
+		There are many unascertained and beautiful propossessing stories yet to be told to nature about its nature by nature - we humans, having an average  mass of 70 kilograms is made up of approximately seven octillion  number of atoms,the atoms in our left eye and atoms in the right eye might come from two distinct burning stars at distance  about several billion light-years of two different galaxies and also along with consciousness as an intrinsic property binding this two together to form what we experience....life!
+
+		<br>
+		<br>
+
+		We can say or think that we come from nature, we are part of universe and moreover universe is within us,and we are studying about nature so it is an astonishing fact that something came from nothing and this something means we humans got consciousness  and thinking about the one that we got from nothing; its a deep obsession of this closed loop and moreover we human species experience this which makes very much special in this unfathomable unique world and also to believe that we are the universe.
+		<br>
+		<br>
+		Although we live in perplexing periods of time in understanding the design of everything that we see around us, mathematics keeps us to come out of this sphinxlike enigma.So just sitting on desk with pen and paper and predicting the laws of Universe allowed by the math is an incredible job.Mathematics is a language of universe whereas science is a systamatic study of universe using mathematics.
+		<br>
+		<br>
+
+Dinosaurs became extinct to this world because they dont have solution from the asteroid  hitting the planet but whereas, we humans are special since our brains are evolved with this spectacular thinking power to solve problems of nature and also having several solutions to the above problems, thereby we can say that it is necessary to understand the laws of physics and to implement in daily life otherwise there will not be any difference between us and other species.
+<br>
+<br>
+
+Finally it is so important to know the design,function and governance of our surroundings to move ahead into higher civilization and  become immortal humans to this world. This is our ultimate task for  every individual to be true and real for being special and special and special....alone in this elegant universe.
+	</h5>
+
+</div>
+
+
+
+	
+<div class="can1">
+	
+	<div  style="color: white;position: absolute;text-align: center;font-size:45px;left:8%;font-size:45px;">
+		<img src="{% static 'albert.jpg' %}" style="width:auto;height: auto;">
+	</div>
+	<div  style="color: white;top: 100px;position: absolute;text-align: center;left:60%;font-size:65px; font-family: 'Arizonia';">
+		<a href="{% url 'account:albert' %}"><img class="zoomin" src="{% static 'dream.png' %}" style="width:380px;height: auto;"></a>
+	</div>
+
+	<marquee scrollamount="16"  style="color: white; font-size: 35px;position: absolute;top: 740px;left:8%;width: 85%;font-family: sans-serif;">Discover yourself by asking the most important astonishing question in the history of science -How we came to be us?</marquee>
+
+	<div class="p1">
+	    <div class="holder hov" style="width: 360px;height: 225px;">
+        <img src="{% static 'anony.jpg' %}" alt="Web Tutorial Plus - Demo" style="width:360px;height: 225px;">
+        <div class="go-top">
+            <h2 style="opacity: 1;">Image 1</h2>
+           <h5>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</h5>
+           <h4><a href="https://www.youtube.com/watch?v=RMLlyK9rLmc&list=RDRMLlyK9rLmc&start_radio=1">Click Here...</a></h4>
+        </div>
+    </div>
+</div>
+	
+<div class="p2">
+<div class="holder hov" style="width: 360px;height: 225px;">
+        <img src="{% static 'anony.jpg' %}" alt="Web Tutorial Plus - Demo" style="width:360px;height: 225px;">
+        <div class="go-top">
+            <h2>Image 2</h2>
+            	<h5>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            	</h5>
+            	<h4><a href="#">Click Here...</a></h4>
+        </div>
+    </div>
+</div>
+
+<div class="p3">
+	<div class="holder hov" style="width: 360px;height: 225px;">
+        <img src="{% static 'anony.jpg' %}" alt="Web Tutorial Plus - Demo" style="width:360px;height: 225px;">
+        <div class="go-top">
+            <h2>Image 3</h2>
+            <h5>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </h5>
+            <h4><a href="#">Click Here...</a></h4>
+            
+        </div>
+    </div>
+</div>
+
+<div class="p4">
+
+	<div class="holder hov">
+        <img src="{% static 'anony.jpg' %}" alt="Web Tutorial Plus - Demo" style="width:360px;height: 225px;">
+        <div class="go-top">
+            <h2>Image 4</h2>
+            <h5>
+            Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+        </h5>
+        <h4><a href="#">Click Here...</a></h4>
+        </div>
+    </div>
+
+</div>
+
+<div class="p5">
+
+	<div class="holder hov">
+        <img src="{% static 'anony.jpg' %}" alt="Web Tutorial Plus - Demo" style="width:360px;height: 225px;">
+        <div class="go-top">
+            <h2>Image 5</h2>
+            <h5>
+            Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+        </h5>
+        <h4><a href="#">Click Here...</a></h4>
+        </div>
+    </div>
+
+</div>
+
+<div class="p6">
+
+	<div class="holder hov">
+        <img src="{% static 'anony.jpg' %}" alt="Web Tutorial Plus - Demo" style="width:360px;height: 225px;">
+        <div class="go-top">
+            <h2>Image 6</h2>
+            <h5>
+            Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+        </h5>
+        <h4><a href="#">Click Here...</a></h4>
+        </div>
+    </div>
+
+</div>
+	
+</div>
+
+
+
+
+<footer style="height: 200px;background-color: #333;position: relative;">
+	
+	
+	<a href="https://www.facebook.com/Dhanush-Pabbathi-410403666374826/"><img src="{% static 'fb.png' %}" style="position: absolute;left: 120px;top: 70px; height: 40px;width: 40px;border-radius: 50%;"></a>
+	<a href="https://www.linkedin.com/in/dhanush-pabbathi-950131181/"><img src="{% static 'linkedin.png' %}" style="position:absolute;left: 200px;top: 70px; height: 40px;width: 40px;border-radius: 50%;"></a>
+	<a href="https://twitter.com/Dhanush93897062"><img src="{% static 'Twitter.png' %}" style="position: absolute;left: 280px;top: 70px; height: 40px;width: 40px;border-radius: 50%;"></a>
+	<a href="https://www.instagram.com/dhanush_inatagram/"><img src="{% static 'insta.jpg' %}" style="position:absolute;left: 360px;top: 70px; height: 40px;width: 40px;border-radius: 50%;"></a>
+	<button onclick="document.getElementById('id01').style.display='block';" style="width:auto;position: absolute;right: 140px;top: 60px;">Contact us</button>
+	
+
+	<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form action="#">
+    <div class="container">
+      
+      <hr>
+      <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="email" required>
+
+      <label for="Email Id "><b>Email Id</b></label>
+      <input type="password" placeholder="Enter Email" name="psw" required>
+
+      <label for="Message"><b>Message</b></label>
+      <input type="password" placeholder="Enter Message" name="psw-repeat" required>
+      
+      
+
+      
+    </div>
+  </form>
+</div>
+
+	
+</footer>
+
+
+<div style="height: 80px;background-color:black;color: white;font-size: 15px;position: relative;">
+		<p style="position: absolute;top: 2px;left: 9.6%"> Copyright 2019   |   Dhanush Pabbathi  |   Designed by Mudassir Ali   |   All Rights Reserved</p>
+		
+	</div>
+
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form method="POST" >
+		{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit">Edit</button>
+	</form>
+
+	<div>
+		{% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li style="color:red">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+	</div>
+
+</body>
+</html>
